@@ -1,6 +1,9 @@
 # feathers-service-instagram-feed
 A FeathersJS service that allows to fetch a given user's Instagram feed via its public endpoints.
 
+[![npm version](https://badge.fury.io/js/feathers-services-instagram-feed.svg)](https://www.npmjs.com/package/feathers-services-instagram-feed)
+[![dependency status](https://david-dm.org/joelalejandro/feathers-services-instagram-feed.svg)](https://david-dm.org/joelalejandro/feathers-services-instagram-feed)
+
 ## Installing
 
 Simply run `npm install --save feathers-services-instagram-feed` and you're good to go!
@@ -21,7 +24,7 @@ Where:
 - `username` is the account from which the service will fetch the media
 - `mountPath` is the API's endpoint that will serve the service's response
 
-Then, require the service (if you're using the Feathers CLI, you can do this in your `services/index.js` file):
+Then, require the service (if you're using the Feathers CLI, you can do this in your app's `services/index.js` file):
 
 ```js
 const instagramFeed = require('feathers-services-instagram-feed');
