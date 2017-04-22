@@ -13,13 +13,17 @@ Require the service, configuring the `mountPath` and the `instagramUsername`.
 const instagramFeed = require('feathers-services-instagram-feed')('/instagram', 'my_instagram_user_name');
 ```
 
-> *Tip:* The username can also be set on the app's configuratoin, under a key named `instagramUsername`.
+> *Tip:* The username can also be set on the app's configuration, under a key named `instagramUsername`.
 
 Then bind it to the app:
 
 ```js
 app.configure(instagramFeed);
 ```
+
+## Caching strategy
+
+The service will cache Instagram's response for a lapse of 15 minutes, in order to prevent abuse.
 
 ## TODOs
 
