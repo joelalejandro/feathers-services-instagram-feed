@@ -1,0 +1,13 @@
+{
+  "name": "feathers-services-instagram-feed",
+  "version": "0.1.0",
+  "description": "A FeathersJS service that allows to fetch a given user's Instagram feed via its public endpoints.",
+  "main": "index.js",
+  "repository": "https://github.com/joelalejandro/feathers-services-instagram-feed",
+  "author": "Joel Alejandro Villarreal Bertoldi <joel.a.villarreal@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "request": "^2.81.0",
+    "request-promise": "^4.2.0"
+  }
+}
