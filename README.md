@@ -7,15 +7,27 @@ Simply run `npm install --save feathers-services-instagram-feed` and you're good
 
 ## Usage
 
-Require the service, configuring the `mountPath` and the `instagramUsername`.
+Add the following entry to your app configuration:
 
-```js
-const instagramFeed = require('feathers-services-instagram-feed')('/instagram', 'my_instagram_user_name');
+```json
+"instagram": {
+    "username": "my_username",
+    "mountPath": "/ig"
+}
 ```
 
-> *Tip:* The username can also be set on the app's configuration, under a key named `instagramUsername`.
+Where:
 
-Then bind it to the app:
+- `username` is the account from which the service will fetch the media
+- `mountPath` is the API's endpoint that will serve the service's response
+
+Then, require the service (if you're using the Feathers CLI, you can do this in your `services/index.js` file):
+
+```js
+const instagramFeed = require('feathers-services-instagram-feed');
+```
+
+And finally, bind it to the app:
 
 ```js
 app.configure(instagramFeed);
